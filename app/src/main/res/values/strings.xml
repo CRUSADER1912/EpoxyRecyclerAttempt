@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EpoxyRecyclerAttempt</string>
+    <string name="txt_header_title_first">First Title</string>
+    <string name="txt_header_title_second">Second Title</string>
+    <string name="txt_header_title_third">Third Title</string>
+    <string name="txt_button_add">Add</string>
+</resources>
