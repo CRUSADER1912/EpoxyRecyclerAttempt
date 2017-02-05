@@ -1,6 +1,7 @@
 package com.crusader.epoxyrecyclerattempt;
 
 import android.content.Context;
+import android.view.View;
 
 import com.airbnb.epoxy.EpoxyAdapter;
 import com.crusader.epoxyrecyclerattempt.models.ButtonModel;
@@ -24,7 +25,13 @@ public class SampleAdapter extends EpoxyAdapter {
         SectionedModel sectionedModel = new SectionedModel_().context(context);
 
         ButtonModel addButton = new ButtonModel_()
-                .text(R.string.txt_button_add);
+                .text(R.string.txt_button_add)
+                .clickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        removeAllModels();
+                    }
+                });
 
         addModels(headerModel,headerModel1,headerModel2,addButton, sectionedModel);
     }
